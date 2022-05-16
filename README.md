@@ -1,0 +1,2 @@
+# Snipping
+$sFile = @WindowsDir &amp; '\System32\SnippingTool.exe' ; not working $sFile = @WindowsDir &amp; '\System32\SoundRecorder.exe' ; also not working $sFile = @WindowsDir &amp; '\System32\charmap.exe' ; working ;$sFile = FileOpenDialog('',@WindowsDir &amp; '\System32', 'Executables (*.exe)') ; not selectable here $res = Run($sFile, @WindowsDir &amp; '\System32') MsgBox(0, $res &amp; FileExists($sFile), $sFile) ; fileexists returns 0, yet the file should exist
